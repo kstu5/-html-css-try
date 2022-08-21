@@ -8,10 +8,13 @@ h1{
   font-size: 45px;
 }
 h2{
-    margin: 0;
+  margin: 0;
 }
 p{
   margin: 0;
+}
+ol{
+  padding: 0px;
 }
 #grid{
   display: grid;
@@ -21,10 +24,32 @@ a{
   text-decoration: none;
   color: black;
 }
+.saw{
+  color: gray;
+}
+#active{
+  color: red;
+}
+
 ol {
   border-right: 1px solid gray;
-  width: 150px;
+  width: 110px;
   padding-top: 20px;
-  padding-left: 35px;
+  padding-left: 45px;
   margin: 0;
+}
+#article{
+  padding-left: 25px;
+  padding-top: 12px;
+}
+@media(max-width:800px){
+  h1{
+      border-bottom: 0px;
+  }
+  ol {
+    border-right: 0px;
+  }
+  #grid{
+    display: block;
+  }
 }
